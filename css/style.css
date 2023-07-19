@@ -13,6 +13,10 @@
   color: var(--main-color);
 }
 
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -85,7 +89,7 @@ header {
 }
 
 .link-header a {
-    margin-left: 68px;
+  margin-left: 68px;
 }
 
 .link-header-activites:hover,
@@ -111,8 +115,8 @@ footer .footer-col {
 }
 
 footer ul {
-    margin-top: 0;
-    padding: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 footer li {
@@ -247,5 +251,64 @@ footer h3 {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  .main-container {
+    padding: unset;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  /****** Header ***********/
+
+  .header {
+    padding: unset;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo-header div {
+    width: 61.09px;
+    height: 19px;
+  }
+
+  .link-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .link-header a {
+    margin-left: 0;
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .link-header-hebergements {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  .link-header-activites:hover,
+  .link-header-hebergements:hover {
+    border-top: unset;
+  }
+
+  /****** Footer ***********/
+
+  footer {
+    flex-direction: column;
+  }
+
+  /****** Card ***********/
+
+  .populaires-cards {
+    flex-direction: column;
+  }
+
+  .populaires-cards .card {
+    width: auto;
+  }
 }
