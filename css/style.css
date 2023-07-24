@@ -22,6 +22,7 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .main-container {
@@ -235,16 +236,23 @@ footer h3 {
 }
 
 /****** filter-bar ***********/
+.button {
+  padding-top: 20px;
+}
+
+.button span {
+  display: flex;
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .filter-bar {
+  padding-left: 85px;
+  margin-top: -35px;
   display: flex;
   height: 50px;
   align-items: center;
   gap: 15px;
-}
-
-.filter-bar span {
-  font-size: 18px;
-  font-weight: 800;
 }
 
 .filter-button {
@@ -364,7 +372,10 @@ footer h3 {
 .populaires-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.populaires-title i {
+  padding-top: 8px;
 }
 
 .populaires-cards .card {
@@ -516,12 +527,25 @@ footer h3 {
   /****** filter-bar ***********/
   .filter-bar {
     height: unset;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 20px 0px 0px 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    column-gap: 0;
+    justify-content: space-between;
   }
 
   .filter-button {
-    width: 50%;
+    flex-basis: 120px;
+    height: unset;
+    padding: 14px 19px;
+  }
+
+  .filter-bar span {
+    font-size: 14px;
+  }
+
+  .filter-bar span>i {
+    font-size: 22px;
   }
 
   /****** Info Bar ***********/
