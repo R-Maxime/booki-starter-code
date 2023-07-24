@@ -86,7 +86,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .logo-header {
@@ -112,6 +112,7 @@ header {
 
 .link-header-activites:hover,
 .link-header-hebergements:hover {
+  padding-top: 23px;
   border-top: 2px solid var(--main-color);
   color: var(--main-color);
 }
@@ -303,6 +304,7 @@ footer h3 {
 .hebergements-and-populaires {
   display: flex;
   gap: 40px;
+  padding-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -412,6 +414,38 @@ footer h3 {
   margin-bottom: 5px;
 }
 
+
+/****** Activités ***********/
+
+.activity {
+  padding: 30px 0 30px 30px;
+}
+
+.activity-cards {
+  display: flex;
+  gap: 30px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.activity-cards a {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+  flex-basis: 25%;
+
+}
+
+.activity-cards img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 380px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activity-cards .card-title {
+  padding: 4px 19px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -517,6 +551,7 @@ footer h3 {
 
   .search-modal button {
     border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
   .search-bar {
@@ -597,5 +632,35 @@ footer h3 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+
+  /****** Activités ***********/
+
+  .activity .section-title {
+    padding-bottom: 30px;
+  }
+
+  .activity-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .activity {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activity-cards a {
+    width: 100%;
+    height: 141px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .activity-cards img {
+    width: 100%;
+    height: 141px;
   }
 }
