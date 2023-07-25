@@ -65,12 +65,14 @@ a {
   text-decoration: none;
 }
 
-img {
+.card,
+.activity-cards a {
   transform: scale(1);
   transition: 0.2s;
 }
 
-img:hover {
+.card:hover,
+.activity-cards a:hover {
   transform: scale(1.030);
   transition: 0.2s;
 }
